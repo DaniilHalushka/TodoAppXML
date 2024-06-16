@@ -1,13 +1,11 @@
-package com.daniil.halushka.todoapp.data
-
-import java.util.Date
+package com.daniil.halushka.todoapp.data.model
 
 data class TodoItem(
     val id: String,
     val text: String,
     val priority: String,
-    val deadline: Date?,
     val isDone: Boolean,
-    val startDate: Date,
-    val changeDate: Date?
+    val startDate: Long,
+    val deadline: Long? = null,
+    val changeDate: Long? = null
 )
