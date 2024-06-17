@@ -4,4 +4,6 @@
     <dimen name="cardview_elevation">4dp</dimen>
     <dimen name="card_corner_radius">8dp</dimen>
     <dimen name="constraint_padding">8dp</dimen>
+    <dimen name="toolbar_layout_margin_start">48dp</dimen>
+    <dimen name="toolbar_layout_margin_end">64dp</dimen>
 </resources>

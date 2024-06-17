@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TodoApp</string>
     <string name="todo_information">Todo information</string>
+    <string name="visibility_of_todo_list">Visibility of todo list</string>
+    <string name="my_tasks">My tasks</string>
+    <string name="complete_tasks">Complete — 0</string>
 </resources>
