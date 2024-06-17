@@ -7,10 +7,12 @@ import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.daniil.halushka.todoapp.R
+import com.daniil.halushka.todoapp.constants.Constants
 import com.daniil.halushka.todoapp.data.model.TodoItem
 import com.daniil.halushka.todoapp.databinding.TodoItemBinding
 
-class TodoAdapter(private val todoItems: List<TodoItem>): RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
+class TodoAdapter(private val todoItems: List<TodoItem>) :
+    RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
     class TodoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val todoItemBinding = TodoItemBinding.bind(view)
 
@@ -28,7 +30,13 @@ class TodoAdapter(private val todoItems: List<TodoItem>): RecyclerView.Adapter<T
 
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
         val currentTodoItem = todoItems[position]
-        holder.itemStatusIndicator.isSelected = currentTodoItem.isDone
+        holder.itemStatusIndicator.isChecked = currentTodoItem.isDone
         holder.itemText.text = currentTodoItem.text
+
+        if (currentTodoItem.priority == Constants.URGENT_PRIORITY) {
+            holder.itemStatusIndicator.setButtonDrawable(R.drawable.checkbox_selector_important)
+        } else {
+            holder.itemStatusIndicator.setButtonDrawable(R.drawable.checkbox_selector_normal)
+        }
     }
 }

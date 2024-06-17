@@ -14,11 +14,13 @@
         android:layout_height="match_parent"
         android:padding="@dimen/constraint_padding">
 
-        <CheckBox
+        <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/item_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            android:button="@null"
+            style="@style/MyCheckBoxStyle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/item_text"
             app:layout_constraintStart_toStartOf="parent"
