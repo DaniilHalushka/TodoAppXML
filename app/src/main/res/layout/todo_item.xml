@@ -28,6 +28,8 @@
             android:id="@+id/item_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
             android:lines="3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/item_information"

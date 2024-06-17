@@ -11,7 +11,7 @@
 
     <color name="gray_back_primary">#F7F6F2</color>
     <color name="white_back_secondary">#FFFFFF</color>
-    <color name="white_back_elevated">#F7F6F2</color>
+    <color name="white_back_elevated">#FFFFFF</color>
 
     <color name="gray_support_separator">#33000000</color>
     <color name="gray_support_overlay">#0F000000</color>
